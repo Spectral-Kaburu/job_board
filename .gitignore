@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Virtual environment
+jobenv/
+
+# Django
+*.db
+*.sqlite3
+/media
+/staticfiles
+/static_root
+.env
+
+# VSCode
+.vscode/
+
+# macOS & Linux junk
+.DS_Store
+Thumbs.db
+
+# Git
+*.swp
+*~
