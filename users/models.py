@@ -26,6 +26,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     last_name = models.CharField(max_length=30, blank=True)
     is_active = models.BooleanField(default=True)   # Is the user allowed to log in?
     is_staff = models.BooleanField(default=False)
+    is_recruiter = models.BooleanField(default=False)
     date_joined = models.DateTimeField(default=timezone.now)
 
     objects = UserManager() # Tells django to use UserManager when creating users
